@@ -16,9 +16,11 @@ function saveEntry() {
         var currentdate = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getUTCFullYear();
         dayEntries.push("<strong>" + "(" + currentdate + ")" + " " + prompt + "</strong>" + "<br>" + entry);
         // chrome storage sync
-        chrome.storage.sync.set({list:dayEntries}, function() {
+        chrome.storage.sync.set({'list': dayEntries}, function() {
             console.log("added to list");
+            console.log(dayEntries)
         });
+        // resetting the text area value
         document.getElementById("entry").value = "";
     }
 }
