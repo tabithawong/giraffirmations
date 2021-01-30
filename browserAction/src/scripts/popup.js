@@ -11,7 +11,7 @@ function saveEntry() {
         document.getElementById("saveEntry").innerHTML = "Saved";
         var entry = document.getElementById("entry").value;
         var date = new Date();
-        var currentdate = date.getDate() + "/" + date.getMonth() + "/" + date.getUTCFullYear();
+        var currentdate = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getUTCFullYear();
         dayEntries.push(currentdate + " " + entry);
         console.log(dayEntries);
         document.getElementById("entry").value = "";
