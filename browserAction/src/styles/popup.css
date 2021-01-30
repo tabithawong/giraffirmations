@@ -24,9 +24,9 @@ html {
 }
 
 h1 {
-    padding: 0.5rem;
+    padding: 0.7rem 0 0.5rem 0;
     font-weight: 700;
-    margin: 1rem 0 0 0;
+    margin: 1.2rem 0 0 0;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -85,14 +85,14 @@ textarea {
     background-color: seashell;
     padding: 20px;
     color: rebeccapurple;
-    border: 2px solid rebeccapurple;
+    border: 1px solid rgb(148, 120, 175);
     border-radius: 8px;
     outline: none;
     font-family: 'Montserrat', sans-serif;
 }
 
 textarea:focus {
-    border: 2px solid rgb(131, 96, 145);
+    border: 1px solid rgb(131, 96, 145);
     background-color: rgb(250, 240, 255);
     border-radius: 8px;
 }
@@ -101,7 +101,7 @@ button {
     background-color: seashell;
     padding: 0.3rem 0.4rem;
     border-radius: 6px;
-    border: 2px solid rebeccapurple;
+    border: 1px solid rgb(140, 113, 167);
     color: rebeccapurple;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
