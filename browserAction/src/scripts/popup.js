@@ -1,9 +1,3 @@
-function isFrogHidden() {
-    const frog = document.getElementById('frog')
-    const style = window.getComputedStyle(frog)
-    frog.style.display = (style.display === 'none') ? 'block' : 'none'
-}
-
 function fireContentScript() {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         chrome.tabs.sendMessage(tabs[0].id, { fireContentScript: true, type: 'fireContentScript' })
@@ -28,7 +22,7 @@ function openTab(evt, tabName) {
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
-  }
+}
 
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('clickMe').addEventListener("click", isFrogHidden)
