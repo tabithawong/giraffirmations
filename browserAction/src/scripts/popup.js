@@ -10,6 +10,9 @@ function saveEntry() {
     if (document.getElementById("saveEntry").innerHTML != "Saved") {
         document.getElementById("saveEntry").innerHTML = "Saved";
         var entry = document.getElementById("entry").value;
+        var date = new Date();
+        var currentdate = date.getUTCDate;
+        dayEntries.push(entry + currentdate);
         dayEntries.push(entry);
         console.log(dayEntries);
         document.getElementById("entry").value = "";
