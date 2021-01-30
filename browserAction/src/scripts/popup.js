@@ -74,3 +74,10 @@ var quotes = ["I am grateful for...", "What would make today great?", "Daily aff
 const quotes_i = Math.floor(Math.random() * quotes.length);
 // set a quote
 document.getElementById("quote").innerHTML = quotes[quotes_i];
+
+
+
+var links = ["https://www.youtube.com/watch?v=dQw4w9WgXcQ"]
+
+const links_i = Math.floor(Math.random() * links.length);
+document.getElementById("links").setAttribute("href", links[links_i]);
