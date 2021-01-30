@@ -11,6 +11,7 @@ function saveEntry() {
     var entry = document.getElementById("entry").value;
     dayEntries.push(entry);
     console.log(dayEntries);
+    document.getElementById("entry").value = "";
 }
 
 function viewPast() {
