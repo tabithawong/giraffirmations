@@ -12,41 +12,21 @@
 
       <!-- Tab buttons -->
       <div class="tab">
-        <script>
-          function openTab(evt, tabName) {
-              // Declare all variables
-              var i, tabcontent, tablinks;
-            
-              // Get all elements with class="tabcontent" and hide them
-              tabcontent = document.getElementsByClassName("tabcontent");
-              for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-              }
-            
-              // Get all elements with class="tablinks" and remove the class "active"
-              tablinks = document.getElementsByClassName("tablinks");
-              for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-              }
-            
-              // Show the current tab, and add an "active" class to the button that opened the tab
-              document.getElementById(tabName).style.display = "block";
-              evt.currentTarget.className += " active";
-          }
-          document.getElementById("default").click();
-        </script> 
         <button class="tablinks" onclick="openTab(event, 'Growth')">Growth</button>
         <button class="tablinks" id="default" onclick="openTab(event, 'Journal')">Journal</button>
         <button class="tablinks" onclick="openTab(event, 'Options')">Options</button>
+        <script>
+          document.getElementById("default").click();
+        </script> 
       </div>
 
       <!-- Tab content -->
-      <div id="Growth" class="tabcontent">
+      <div class="tabcontent" id="Growth" >
         <h3>Growth</h3>
         <p>Insert Giraffe here</p>
       </div>
 
-      <div id="Journal" class="tabcontent">
+      <div class="tabcontent" id="Journal">
         <h3>Journal</h3>
         <button type="button" id="peepeepoopoo">Click Me</button>
         <br/><br/>
@@ -55,7 +35,7 @@
         </div> 
       </div>
 
-      <div id="Options" class="tabcontent">
+      <div class="tabcontent" id="Options">
         <h3>Options</h3>
         <p>Buttons here.</p>
       </div>
