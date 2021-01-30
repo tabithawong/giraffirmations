@@ -7,13 +7,31 @@
   <body>
     <div id="app" class="popup-content">
       <h1 class="app-name">Grateful Giraffe :D</h1>
+      <!-- Tab buttons -->
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Growth')">Growth</button>
+        <button class="tablinks" id="default" onclick="openTab(event, 'Journal')">Journal</button>
+        <button class="tablinks" onclick="openTab(event, 'Options')">Options</button>
+      </div>
 
-      <div id="display-container">
+      <!-- Tab content -->
+      <div id="Growth" class="tabcontent">
+      <h3>Growth</h3>
+      <p>Insert Giraffe here</p>
+      </div>
+
+      <div id="Journal" class="tabcontent">
+        <h3>Journal</h3>
         <button type="button" id="peepeepoopoo">Click Me</button>
         <br/><br/>
         <div class="speech-bubble">
           <h3>I am grateful for...</h3>
-        </div>
+        </div> 
+      </div>
+
+      <div id="Options" class="tabcontent">
+        <h3>Options</h3>
+        <p>Buttons here.</p>
       </div>
 
       <footer>
