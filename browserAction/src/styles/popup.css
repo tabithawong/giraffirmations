@@ -1,5 +1,7 @@
 #app {
-    width: 200px;
+    width: 300px;
+    height: 500px;
+    background-color: rgba(179, 153, 218, 0.432);
 }
 
 #frog {
