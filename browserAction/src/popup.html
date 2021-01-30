@@ -9,20 +9,16 @@
   <body>
 
       <!-- Tab buttons -->
-      <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Growth')">Growth</button>
-        <button class="tablinks" id="default" onclick="openTab(event, 'Journal')">Journal</button>
-        <button class="tablinks" onclick="openTab(event, 'Options')">Options</button>
-        <script>
-          document.getElementById("default").click();
-        </script> 
-      </div>
+        <button class="tablink" onclick="openPage('Growth', this, 'red')">Growth</button>
+        <button class="tablink" onclick="openPage('Journal', this, 'green')" id="defaultOpen">Journal</button>
+        <button class="tablink" onclick="openPage('Options', this, 'blue')">Options</button>
+
 
       <div id="app" class="popup-content">
         <h1 class="app-name">Grateful Giraffe :D</h1>
 
       <!-- Tab content -->
-      <div class="tabcontent" id="Growth" >
+      <div class="tabcontent" id="Growth">
         <h3>Growth</h3>
         <p>Insert Giraffe here</p>
       </div>
