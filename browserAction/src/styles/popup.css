@@ -37,7 +37,7 @@ a { font-size: 1.4em; }
     text-align: center;
     left: 6%;
     color: seashell;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1rem;
 }
 
@@ -63,7 +63,8 @@ a { font-size: 1.4em; }
 footer {
     font-weight: 300;
     font-size: 0.85rem;
-    margin: 0 1rem;
+    margin: 1rem 1rem;
+    padding: 1rem;
 }
 
 input {
