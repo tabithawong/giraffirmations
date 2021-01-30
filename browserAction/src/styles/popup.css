@@ -8,13 +8,13 @@ html {
     font-weight: 300;
 }
 
-
+/*  */
 #app {
     width: 400px;
-    height: 560px;
+    height: auto;
     background-color: rgba(218, 181, 236, 0.767);
     color: rebeccapurple;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1rem;
     text-align: center;
 }
@@ -38,6 +38,7 @@ a { font-size: 1.4em; }
     left: 6%;
     color: seashell;
     font-weight: 300;
+    font-size: 1rem;
 }
 
 .speech-bubble:after {
@@ -62,7 +63,8 @@ a { font-size: 1.4em; }
 footer {
     font-weight: 300;
     font-size: 0.85rem;
-    margin: 0 1rem;
+    margin: 1rem 1rem;
+    padding: 1rem;
 }
 
 input {
@@ -81,4 +83,8 @@ input:focus {
     border: 2px solid rgb(131, 96, 145);
     background-color: rgb(246, 232, 252);
     border-radius: 8px;
+}
+
+button {
+
 }
