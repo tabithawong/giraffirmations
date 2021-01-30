@@ -1,5 +1,5 @@
 {
-  "name": "Grateful Giraffe",
+  "name": "Type A",
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "A Browser Action Extension",
@@ -33,7 +33,7 @@
       "19": "icons/icon-16.png",
       "38": "icons/icon-32.png"
     },
-    "default_title": "Grateful Giraffe Chrome Extension",
+    "default_title": "Type A Chrome Extension Boilerplate",
     "default_popup": "popup.html"
   }
 }

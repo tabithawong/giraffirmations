@@ -1,83 +1,9 @@
-* {
-    box-sizing: border-box;
-  }
-
-/* Font style */
-body {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    padding: 0.2rem;
-    height: 100%;
-    margin: 0;
-}
-
 #app {
-    width: 300px;
-    height: 520px;
-    /* background-color: rgba(220, 209, 236, 0.788);
-    justify-content: space-around; */
+    width: 200px;
 }
 
-/* Style tab links */
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
-}
-
-.tablink:hover {
-  background-color: #777;
-}
-
-/* Style the tab content (and add height:100% for full page content) */
-
-.tabcontent {
-    color: white;
+#frog {
     display: none;
-    padding: 100px 20px;
-    height: 100%;
-  }
-  
-  #Growth {background-color: red;}
-  #Journal {background-color: green;}
-  #Options {background-color: blue;}
-  
-  /* Style the tab content */
-  .tabcontent {
-	padding: 6px 12px;
-	border: 1px solid #ccc;
-	border-top: none;
-  }
+}
+
 a { font-size: 1.4em; }
-
-.speech-bubble {
-	position: relative;
-	background: #7835af;
-    border-radius: 10px;
-    width: 85%;
-    padding: 0.1rem;
-    text-align: center;
-    left: 6%;
-}
-
-.speech-bubble:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 70%;
-	width: 0;
-	height: 0;
-	border: 10px solid transparent;
-	border-right-color: #7835af;
-	border-left: 0;
-	border-bottom: 0;
-	margin-top: -10px;
-    margin-left: -20px;
-    left: 5%;
-}
