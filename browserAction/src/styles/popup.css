@@ -73,7 +73,7 @@ footer {
     padding: 1rem;
 }
 
-input {
+textarea {
     font-weight: 500;
     font-size: 0.9rem;
     width: 80%;
@@ -83,9 +83,10 @@ input {
     border: 2px solid rebeccapurple;
     border-radius: 8px;
     outline: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
-input:focus {
+textarea:focus {
     border: 2px solid rgb(131, 96, 145);
     background-color: rgb(246, 232, 252);
     border-radius: 8px;
