@@ -13,7 +13,7 @@ function saveEntry() {
         var prompt = document.getElementById("quote").innerHTML;
         var date = new Date();
         var currentdate = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getUTCFullYear();
-        dayEntries.push("(" + currentdate + ")" + " " + prompt + "<br>" + entry);
+        dayEntries.push("<strong>" + "(" + currentdate + ")" + " " + prompt + "</strong>" + "<br>" + entry);
         console.log(dayEntries);
         document.getElementById("entry").value = "";
     }
