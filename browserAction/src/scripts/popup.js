@@ -13,7 +13,7 @@ function saveEntry() {
 }
 
 function viewPast() {
-    document.write(dayEntries.toString());
+    document.getElementById("past").innerHTML = dayEntries.toString();
 }
 
 document.addEventListener('DOMContentLoaded', function() {
