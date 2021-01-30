@@ -5,7 +5,7 @@ function fireContentScript() {
 }
 function openTab(evt, tabName) {
     // Declare all variables
-    var i, tabcontent, tablinks, tab;
+    var i, tabcontent, tablinks;
   
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -20,8 +20,7 @@ function openTab(evt, tabName) {
     }
   
     // Show the current tab, and add an "active" class to the button that opened the tab
-    tab = document.getElementById(tabName);
-    tab.className.style.display = "block";
+    document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 
