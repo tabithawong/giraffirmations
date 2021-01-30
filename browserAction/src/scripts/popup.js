@@ -23,7 +23,6 @@ function viewPast() {
         document.getElementById("viewPast").innerHTML = "Hide Past Entries";
         var blanketdiv = document.createElement('div');
         blanketdiv.setAttribute("id", "blanket");
-        blanketdiv.style.display = "block";
         document.getElementById("Journal").appendChild(blanketdiv);
         var space = document.createElement('br');
         document.getElementById("blanket").appendChild(space); //adding a blank line after
@@ -31,12 +30,12 @@ function viewPast() {
             var div = document.createElement('div');
             div.innerHTML = dayEntries[i];
             document.getElementById("blanket").appendChild(div); //creating div with entry
-        }  
+        }
     }
     else {
         var blanketdiv = document.getElementById("blanket");
         blanketdiv.style.display = "none";
-        document.getElementById("viewPast").innerHTML = "Show Past Entries";
+        document.getElementById("viewPast").innerHTML = "Thanks for Viewing!";
     }
     
 }
