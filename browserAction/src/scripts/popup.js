@@ -21,7 +21,7 @@ function saveEntry() {
 
 function viewPast() {
     var buttontext = document.getElementById("viewPast").innerHTML;
-    if (buttontext === "Show Past Entries") {
+    if (buttontext === "View Past Entries") {
         document.getElementById("viewPast").innerHTML = "Hide Past Entries";
         var blanketdiv = document.createElement('div');
         blanketdiv.setAttribute("id", "blanket");
