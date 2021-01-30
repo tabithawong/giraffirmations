@@ -4,14 +4,17 @@ function fireContentScript() {
     })
 }
 
+var dayEntries = [];
+
 function saveEntry() {
-    const frog = document.getElementById('frog')
-    const style = window.getComputedStyle(frog)
-    frog.style.display = (style.display === 'none') ? 'block' : 'none'
+    var entry = document.getElementById("entry").nodeValue;
+    dayEntries.push(entry);
+    console.log(dayEntries);
 }
 
 function viewPast() {
-    
+    var pastEntries = document.getElementById("past").innerHTML;
+    pastEntries = dayEntries.toString();
 }
 
 document.addEventListener('DOMContentLoaded', function() {
