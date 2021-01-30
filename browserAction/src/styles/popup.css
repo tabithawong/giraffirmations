@@ -43,8 +43,7 @@ a { font-size: 1.4em; }
 	content: '';
 	position: absolute;
 	left: 0;
-	top: 50%;
-	top: 65%;
+	top: 75%;
 	width: 0;
 	height: 0;
 	border: 20px solid transparent;
@@ -56,10 +55,11 @@ a { font-size: 1.4em; }
 	margin-top: -10px;
 	margin-left: -20px;
     margin-left: -20px;
-    left: 5%;
+    left: 3%;
 }
 
 footer {
     font-weight: 300;
     font-size: 0.85rem;
+    margin: 0 1rem;
 }
