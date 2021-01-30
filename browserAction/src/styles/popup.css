@@ -16,6 +16,7 @@ html {
     width: 400px;
     height: auto;
     background-color: rgba(218, 181, 236, 0.767);
+    background-image: url("../images/Giraffe_Background.png");
     color: rebeccapurple;
     font-weight: 400;
     font-size: 1rem;

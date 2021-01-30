@@ -13,14 +13,14 @@ function saveEntry() {
         var entry = document.getElementById("entry").value;
         var prompt = document.getElementById("quote").innerHTML;
         var date = new Date();
-        var currentdate = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getUTCFullYear();
+        var currentdate = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getUTCFullYear() + " - " + date.getHours() + ":" + date.getMinutes();
         dayEntries.push("<strong>" + "(" + currentdate + ")" + " " + prompt + "</strong>" + "<br>" + entry);
         // resetting the text area value
         document.getElementById("entry").value = "";
         // chrome storage sync
         chrome.storage.sync.set({"entryList": dayEntries}, function() {
             console.log("added to list");
-            console.log(dayEntries)
+            console.log(dayEntries);
         });
     }
 }
@@ -77,7 +77,7 @@ document.getElementById("quote").innerHTML = quotes[quotes_i];
 
 
 
-var links = ["https://www.youtube.com/watch?v=dQw4w9WgXcQ", "https://open.spotify.com/playlist/4Sqm46mbSLrVK3u3E071MW?si=oPvMdSLuQm68AQISooURPA", "https://open.spotify.com/playlist/2loXjDqVyJ4rhSrsQSp6Mc?si=ic5tOFjqR5uo7X1eLO7-_g", "https://www.youtube.com/watch?v=NGC8IS4gjpM", "https://www.youtube.com/watch?v=Sdkwu2FvFfI", "https://www.youtube.com/watch?v=8rDNZ5Ebwsc"]
+var links = ["https://www.youtube.com/watch?v=dQw4w9WgXcQ", "https://open.spotify.com/playlist/4Sqm46mbSLrVK3u3E071MW?si=oPvMdSLuQm68AQISooURPA", "https://open.spotify.com/playlist/2loXjDqVyJ4rhSrsQSp6Mc?si=ic5tOFjqR5uo7X1eLO7-_g", "https://www.youtube.com/watch?v=NGC8IS4gjpM", "https://www.youtube.com/watch?v=Sdkwu2FvFfI", "https://www.youtube.com/watch?v=8rDNZ5Ebwsc", "https://open.spotify.com/playlist/1NCJd5pQ36pG3ve875SS67?si=WW4SJrlSTtmYvdMmPNU7lw", "https://www.youtube.com/watch?v=kewXtkGmDtw"]
 
 const links_i = Math.floor(Math.random() * links.length);
 document.getElementById("links").setAttribute("href", links[links_i]);
