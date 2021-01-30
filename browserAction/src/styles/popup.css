@@ -1,3 +1,13 @@
+* {
+    box-sizing: border-box;
+  }
+
+/* Font style */
+.body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
 #app {
     width: 300px;
     height: 500px;
