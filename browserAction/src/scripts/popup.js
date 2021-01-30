@@ -39,8 +39,8 @@ function printEntries(entries) {
 function viewPast() {
     var buttontext = document.getElementById("viewPast").innerHTML;
     // if "view past entries"
-    if (buttontext === "View Past Entries") {
-        document.getElementById("viewPast").innerHTML = "Hide Past Entries";
+    if (buttontext === "View Last Entry") {
+        document.getElementById("viewPast").innerHTML = "Hide Last Entry";
         var blanketdiv = document.createElement('div'); // creating "blanket" div to easily hide
         blanketdiv.setAttribute("id", "blanket");
         document.getElementById("Journal").appendChild(blanketdiv);
