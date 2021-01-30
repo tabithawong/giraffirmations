@@ -77,7 +77,7 @@ document.getElementById("quote").innerHTML = quotes[quotes_i];
 
 
 
-var links = ["https://www.youtube.com/watch?v=dQw4w9WgXcQ"]
+var links = ["https://www.youtube.com/watch?v=dQw4w9WgXcQ", "https://open.spotify.com/playlist/4Sqm46mbSLrVK3u3E071MW?si=oPvMdSLuQm68AQISooURPA"]
 
 const links_i = Math.floor(Math.random() * links.length);
 document.getElementById("links").setAttribute("href", links[links_i]);
