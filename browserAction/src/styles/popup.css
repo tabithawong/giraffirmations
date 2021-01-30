@@ -74,7 +74,7 @@ footer {
     font-weight: 300;
     font-size: 0.85rem;
     margin: 0 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -126,7 +126,7 @@ h3 {
 }
 
 .blurb {
-    margin: 0 0 1rem 0;
+    margin: 0 1rem 1rem 1rem;
 }
 
 #display-container {
@@ -151,4 +151,9 @@ hr.footer {
     border: 1px;
     height: 1px;
     color: rebeccapurple;
+}
+
+.blanket {
+    padding: 1rem;
+    background-color: rgba(227, 216, 231, 0.849);
 }
