@@ -13,18 +13,21 @@
         <button class="tablinks" onclick="openTab(event, 'Growth')">Growth</button>
         <button class="tablinks" id="default" onclick="openTab(event, 'Journal')">Journal</button>
         <button class="tablinks" onclick="openTab(event, 'Options')">Options</button>
+        <script>
+          document.getElementById("default").click();
+        </script> 
       </div>
 
       <div id="app" class="popup-content">
         <h1 class="app-name">Grateful Giraffe :D</h1>
 
       <!-- Tab content -->
-      <div id="Growth" class="tabcontent">
+      <div class="tabcontent" id="Growth" >
         <h3>Growth</h3>
         <p>Insert Giraffe here</p>
       </div>
 
-      <div id="Journal" class="tabcontent">
+      <div class="tabcontent" id="Journal">
         <h3>Journal</h3>
         <button type="button" id="peepeepoopoo">Click Me</button>
         <br/><br/>
@@ -33,7 +36,7 @@
         </div> 
       </div>
 
-      <div id="Options" class="tabcontent">
+      <div class="tabcontent" id="Options">
         <h3>Options</h3>
         <p>Buttons here.</p>
       </div>
