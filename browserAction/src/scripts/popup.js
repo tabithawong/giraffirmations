@@ -6,6 +6,16 @@ function fireContentScript() {
 
 var dayEntries = [];
 
+// date format option constants
+const options = {
+    year: "2-digit",
+    month:"2-digit",
+    day:"2-digit",
+    hour12: true,
+    hour: "2-digit",
+    minute: "2-digit"
+    }
+
 function saveEntry() {
     if (document.getElementById("saveEntry").innerHTML != "Saved") {
         // creating variables for the entry, prompt, and current date
@@ -13,7 +23,7 @@ function saveEntry() {
         var entry = document.getElementById("entry").value;
         var prompt = document.getElementById("quote").innerHTML;
         var date = new Date();
-        var currentdate = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getUTCFullYear() + " - " + date.getHours() + ":" + date.getMinutes();
+        var currentdate = date.toLocaleDateString("en-US",options);
         dayEntries.push("<strong>" + "(" + currentdate + ")" + " " + prompt + "</strong>" + "<br>" + entry);
         // resetting the text area value
         document.getElementById("entry").value = "";
