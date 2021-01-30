@@ -59,14 +59,11 @@ a { font-size: 1.4em; }
 	top: 75%;
 	width: 0;
 	height: 0;
-	border: 20px solid transparent;
-	border-right-color: #00aabb;
 	border: 10px solid transparent;
 	border-right-color: #7835af;
 	border-left: 0;
 	border-bottom: 0;
 	margin-top: -10px;
-	margin-left: -20px;
     margin-left: -20px;
     left: 3%;
 }
@@ -94,7 +91,7 @@ textarea {
 
 textarea:focus {
     border: 1px solid rgb(131, 96, 145);
-    background-color: rgb(250, 240, 255);
+    background-color: rgba(250, 236, 226, 0.952);
     border-radius: 8px;
 }
 
@@ -108,6 +105,16 @@ button {
     font-size: 0.9rem;
     font-family: 'Montserrat', sans-serif;
     outline: none;
+}
+
+button:hover {
+    background-color:   rgb(148, 120, 175);
+    color: seashell;
+}
+
+button:focus {
+    background-color: rebeccapurple;
+    color: seashell;
 }
 
 h3 {
