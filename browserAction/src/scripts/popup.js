@@ -16,9 +16,11 @@ function saveEntry() {
 
 function viewPast() {
     for (i = 0; i < dayEntries.length; i++) {
+        var space = document.createElement('br');
+        document.getElementById("Journal").appendChild(space);
         var div = document.createElement('div');
         div.innerHTML = dayEntries[i];
-        document.body.appendChild(div);
+        document.getElementById("Journal").appendChild(div);
     }
 }
 
