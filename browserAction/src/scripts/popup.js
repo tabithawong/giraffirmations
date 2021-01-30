@@ -37,8 +37,7 @@ function viewPast() {
         var blanketdiv = document.getElementById("blanket");
         blanketdiv.style.display = "none";
         document.getElementById("viewPast").innerHTML = "Thanks for Viewing!";
-    }
-    
+    }  
 }
 
 document.addEventListener('DOMContentLoaded', function() {
