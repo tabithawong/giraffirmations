@@ -2,49 +2,29 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <script src="scripts/popup.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles/popup.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:b,bi,i,100,300,400,500,600,800">
+    <link href="styles/popup.css" rel="stylesheet">
   </head>
   <body>
+    <div id="app" class="popup-content">
+      <h1 class="app-name">A Browser Action</h1>
 
-      <!-- Tab buttons -->
-      <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Growth')">Growth</button>
-        <button class="tablinks" id="default" onclick="openTab(event, 'Journal')">Journal</button>
-        <button class="tablinks" onclick="openTab(event, 'Options')">Options</button>
-        <script>
-          document.getElementById("default").click();
-        </script> 
-      </div>
-
-      <div id="app" class="popup-content">
-        <h1 class="app-name">Grateful Giraffe :D</h1>
-
-      <!-- Tab content -->
-      <div class="tabcontent" id="Growth" >
-        <h3>Growth</h3>
-        <p>Insert Giraffe here</p>
-      </div>
-
-      <div class="tabcontent" id="Journal">
-        <h3>Journal</h3>
-        <button type="button" id="peepeepoopoo">Click Me</button>
+      <div id="display-container">
+        <button type="button" id="clickMe">Click Me</button>
         <br/><br/>
-        <div class="speech-bubble">
-          <h3 id="quote"></h3>
-        </div> 
-      </div>
-
-      <div class="tabcontent" id="Options">
-        <h3>Options</h3>
-        <p>Buttons here.</p>
+        <div id="frog">
+          <img src="images/frog.jpg" alt="croak" />
+        </div>
       </div>
 
       <footer>
-        <p> Made with love and gratitude, we hope you see your personal growth through Gerry, the Giraffe. 
+        <p>
+          <small>
+            <a href="#" id="fireContentScript">Fire Content Script !</a>
+          </small>
         </p>
       </footer>
     </div>
+    
+    <script src="scripts/popup.js"></script>
   </body>
 </html>
