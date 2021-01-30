@@ -18,7 +18,7 @@ function saveEntry() {
         // resetting the text area value
         document.getElementById("entry").value = "";
         // chrome storage sync
-        chrome.storage.sync.set({'elist': dayEntries}, function() {
+        chrome.storage.sync.set({"entryList": dayEntries}, function() {
             console.log("added to list");
             console.log(dayEntries)
         });
@@ -26,11 +26,13 @@ function saveEntry() {
 }
 
 // printing each entry
-function printEntries(dayEntries) {
-    dayEntries.map(dayEntries => {
+function printEntries(entries) {
+    entries.map(entry => {
         var div = document.createElement('div');
-        div.innerHTML = dayEntries;
-        document.getElementById("blanket").appendChild(div); // creating div with entry inside
+        div.innerHTML = entry
+        document.getElementById("blanket").appendChild(div); // adding entry to blanket div
+        dayEntries.unshift(entry);
+        console.log(dayEntries)
     })
 }
 
@@ -39,15 +41,15 @@ function viewPast() {
     // if "view past entries"
     if (buttontext === "View Past Entries") {
         document.getElementById("viewPast").innerHTML = "Hide Past Entries";
-        var blanketdiv = document.createElement('div'); // creating "blanket" div to easily hide entries
+        var blanketdiv = document.createElement('div'); // creating "blanket" div to easily hide
         blanketdiv.setAttribute("id", "blanket");
         document.getElementById("Journal").appendChild(blanketdiv);
         var space = document.createElement('br');
         document.getElementById("blanket").appendChild(space); // adding a blank line after entry
-        // saving the elist (entry list)
-        chrome.storage.sync.get("elist", function(items) {
+        // saving the entryList
+        chrome.storage.sync.get("entryList", function(items) {
             console.log(items);
-            printEntries(items.elist);
+            printEntries(items.entryList);
         })
     }
     // if "hide entries"
