@@ -6,6 +6,8 @@
 html {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    width: 416px;
+    height: auto;
     background-color: seashell;
 }
 
