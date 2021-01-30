@@ -17,13 +17,14 @@ function saveEntry() {
         dayEntries.push("<strong>" + "(" + currentdate + ")" + " " + prompt + "</strong>" + "<br>" + entry);
         // resetting the text area value
         document.getElementById("entry").value = "";
+        // chrome storage sync
+        chrome.storage.sync.set({'elist': dayEntries}, function() {
+            console.log("added to list");
+            console.log(dayEntries)
+        });
     }
-    // chrome storage sync
-    chrome.storage.sync.set({'elist': dayEntries}, function() {
-        console.log("added to list");
-        console.log(dayEntries)
-    });
 }
+
 function printEntries(dayEntries) {
     dayEntries.map(dayEntries => {
         var div = document.createElement('div');
