@@ -24,8 +24,3 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('clickMe').addEventListener("click", isFrogHidden)
-    document.getElementById('fireContentScript').addEventListener("click", fireContentScript)
-})
-
