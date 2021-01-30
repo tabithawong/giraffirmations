@@ -153,7 +153,12 @@ hr.footer {
     color: rebeccapurple;
 }
 
-.blanket {
-    padding: 1rem;
-    background-color: rgba(227, 216, 231, 0.849);
+#blanket {
+    overflow-wrap: break-word;
+    display: block;
+    flex-wrap: wrap;
+    padding: 1.2rem;
+    margin: 1rem;
+    background-color: rgba(195, 157, 214, 0.692);
+    border-radius: 10px;
 }
