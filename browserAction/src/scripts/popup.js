@@ -13,7 +13,11 @@ function saveEntry() {
 }
 
 function viewPast() {
-    document.getElementById("past").innerHTML = dayEntries.toString();
+    for (i = 0; i < dayEntries.length; i++) {
+        var div = document.createElement('div');
+        div.innerHTML = dayEntries[i];
+        document.body.appendChild(div);
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
