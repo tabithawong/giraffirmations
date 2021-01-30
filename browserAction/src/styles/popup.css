@@ -34,7 +34,10 @@ h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
-a { font-size: 1.4em; }
+a {
+    font-size: 1.4em; 
+    text-decoration: none;
+}
 
 #quote {
     font-weight: 500;
