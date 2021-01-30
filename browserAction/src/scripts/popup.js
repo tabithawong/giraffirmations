@@ -25,6 +25,7 @@ function saveEntry() {
     }
 }
 
+// printing each entry
 function printEntries(dayEntries) {
     dayEntries.map(dayEntries => {
         var div = document.createElement('div');
