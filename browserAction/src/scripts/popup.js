@@ -7,13 +7,12 @@ function fireContentScript() {
 var dayEntries = [];
 
 function saveEntry() {
-    if (document.getElementById("saveEntry").value === "Saved") {
-    } else {
-    document.getElementById("saveEntry").innerHTML = "Saved";
-    var entry = document.getElementById("entry").value;
-    dayEntries.push(entry);
-    console.log(dayEntries);
-    document.getElementById("entry").value = "";
+    if (document.getElementById("saveEntry").innerHTML != "Saved") {
+        document.getElementById("saveEntry").innerHTML = "Saved";
+        var entry = document.getElementById("entry").value;
+        dayEntries.push(entry);
+        console.log(dayEntries);
+        document.getElementById("entry").value = "";
     }
 }
 
