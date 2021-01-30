@@ -13,21 +13,26 @@ a { font-size: 1.4em; }
 
 .speech-bubble {
 	position: relative;
-	background: #00aabb;
-	border-radius: .4em;
+	background: #7835af;
+    border-radius: 8px;
+    width: 85%;
+    padding: 0.1rem;
+    text-align: center;
+    left: 6%;
 }
 
 .speech-bubble:after {
 	content: '';
 	position: absolute;
 	left: 0;
-	top: 50%;
+	top: 65%;
 	width: 0;
 	height: 0;
-	border: 20px solid transparent;
-	border-right-color: #00aabb;
+	border: 10px solid transparent;
+	border-right-color: #7835af;
 	border-left: 0;
 	border-bottom: 0;
 	margin-top: -10px;
-	margin-left: -20px;
+    margin-left: -20px;
+    left: 5%;
 }
