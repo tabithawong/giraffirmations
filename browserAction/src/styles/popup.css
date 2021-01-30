@@ -20,16 +20,14 @@ html {
     text-align: center;
     border-radius: 8px;
     margin: 0.5rem 0.5rem 0 0.5rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
     padding: 0.5rem;
     font-weight: 700;
     margin: 1rem 0 0 0;
-}
-
-#frog {
-    display: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a { font-size: 1.4em; }
@@ -46,10 +44,11 @@ a { font-size: 1.4em; }
 	background: #72409b;
     border-radius: 8px;
     width: 87%;
-    padding: 0.05rem 0.3rem;
+    padding: 0.05rem 0.8rem;
     text-align: center;
     left: 6%;
     color: seashell;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .speech-bubble:after {
@@ -76,6 +75,7 @@ footer {
     font-size: 0.85rem;
     margin: 1rem 1rem;
     padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 textarea {
@@ -93,7 +93,7 @@ textarea {
 
 textarea:focus {
     border: 2px solid rgb(131, 96, 145);
-    background-color: rgb(249, 236, 255);
+    background-color: rgb(250, 240, 255);
     border-radius: 8px;
 }
 
@@ -104,11 +104,14 @@ button {
     border: 2px solid rebeccapurple;
     color: rebeccapurple;
     font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
 }
 
 h3 {
     font-weight: 400;
     font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .blurb {
