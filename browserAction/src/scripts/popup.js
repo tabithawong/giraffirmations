@@ -25,6 +25,7 @@ function saveEntry() {
     }
 }
 
+// printing each entry
 function printEntries(dayEntries) {
     dayEntries.map(dayEntries => {
         var div = document.createElement('div');
@@ -43,6 +44,7 @@ function viewPast() {
         document.getElementById("Journal").appendChild(blanketdiv);
         var space = document.createElement('br');
         document.getElementById("blanket").appendChild(space); // adding a blank line after entry
+        // saving the elist (entry list)
         chrome.storage.sync.get("elist", function(items) {
             console.log(items);
             printEntries(items.elist);
