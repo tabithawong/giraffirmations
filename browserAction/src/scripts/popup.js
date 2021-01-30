@@ -15,6 +15,8 @@ function saveEntry() {
 }
 
 function viewPast() {
+    var space = document.createElement('br');
+    document.getElementById("Journal").appendChild(space); //adding a blank line after
     for (i = 0; i < dayEntries.length; i++) {
         var div = document.createElement('div');
         div.innerHTML = dayEntries[i];
