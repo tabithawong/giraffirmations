@@ -6,6 +6,7 @@
 .body {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
+    padding: 1rem;
 }
 
 #app {
@@ -55,7 +56,7 @@ a { font-size: 1.4em; }
 .speech-bubble {
 	position: relative;
 	background: #7835af;
-    border-radius: 8px;
+    border-radius: 10px;
     width: 85%;
     padding: 0.1rem;
     text-align: center;
@@ -66,7 +67,7 @@ a { font-size: 1.4em; }
 	content: '';
 	position: absolute;
 	left: 0;
-	top: 65%;
+	top: 70%;
 	width: 0;
 	height: 0;
 	border: 10px solid transparent;
