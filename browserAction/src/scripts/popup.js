@@ -7,21 +7,21 @@ function fireContentScript() {
 var dayEntries = [];
 
 function saveEntry() {
-    if (document.getElementById("saveEntry").value === "Saved") {
-    } else {
-    document.getElementById("saveEntry").innerHTML = "Saved";
-    var entry = document.getElementById("entry").value;
-    var date = new Date();
-    var currentdate = date.getUTCDate;
-    dayEntries.push(entry + currentdate);
-    console.log(dayEntries);
-    document.getElementById("entry").value = "";
+    if (document.getElementById("saveEntry").innerHTML != "Saved") {
+        document.getElementById("saveEntry").innerHTML = "Saved";
+        var entry = document.getElementById("entry").value;
+        var date = new Date();
+        var currentdate = date.getUTCDate;
+        dayEntries.push(entry + currentdate);
+        dayEntries.push(entry);
+        console.log(dayEntries);
+        document.getElementById("entry").value = "";
     }
 }
 
 function viewPast() {
     var buttontext = document.getElementById("viewPast").innerHTML;
-    if (buttontext != "Hide Past Entries") {
+    if (buttontext === "Show Past Entries") {
         document.getElementById("viewPast").innerHTML = "Hide Past Entries";
         var blanketdiv = document.createElement('div');
         blanketdiv.setAttribute("id", "blanket");
