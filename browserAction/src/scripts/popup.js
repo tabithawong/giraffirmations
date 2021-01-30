@@ -7,14 +7,13 @@ function fireContentScript() {
 var dayEntries = [];
 
 function saveEntry() {
-    var entry = document.getElementById("entry").nodeValue;
+    var entry = document.getElementById("entry").value;
     dayEntries.push(entry);
     console.log(dayEntries);
 }
 
 function viewPast() {
-    var pastEntries = dayEntries.toString();
-    pastEntries = document.getElementById("past").innerHTML;
+    document.getElementById("past").innerHTML = dayEntries.toString();
 }
 
 document.addEventListener('DOMContentLoaded', function() {
