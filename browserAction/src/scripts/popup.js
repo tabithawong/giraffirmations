@@ -17,6 +17,7 @@ const options = {
     }
 
 
+
 function saveEntry() {
     if (document.getElementById("saveEntry").innerHTML != "Saved") {
         // creating variables for the entry, prompt, and current date
@@ -33,6 +34,7 @@ function saveEntry() {
             console.log("added to list");
             console.log(dayEntries);
         })
+    
     }
 }
 
@@ -58,7 +60,7 @@ function viewPast() {
         var space = document.createElement('br');
         document.getElementById("blanket").appendChild(space); // adding a blank line after entry
         // saving the entryList
-        chrome.storage.sync.get(["entryList"], function(items) {
+        chrome.storage.sync.get("entryList", function(items) {
             console.log(items);
             printEntries(items.entryList);
         })
