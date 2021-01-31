@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+  }
+
+/* Body */
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    width: 416px;
+    height: auto;
+    background-color: seashell;
+}
+
+/*  */
+#app {
+    width: 400px;
+    height: auto;
+    background-color: rgba(218, 181, 236, 0.767);
+    color: rebeccapurple;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    margin: 0rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+h1 {
+    padding: 0.7rem 0 0.5rem 0;
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin: 0 0 0 0;
+    padding-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    font-size: 1.4em; 
+    text-decoration: none;
+}
+
+#quote {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.speech-bubble {
+	position: relative;
+	background: #72409b;
+    border-radius: 10px;
+    width: 85%;
+    margin-top: 1.5rem;
+    padding: 0.05rem 0.7rem;
+    text-align: center;
+    left: 7%;
+    color: seashell;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 75%;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-right-color: #7835af;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -10px;
+    margin-left: -20px;
+    left: 3%;
+}
+
+footer {
+    font-weight: 300;
+    font-size: 0.85rem;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+textarea {
+    font-weight: 500;
+    font-size: 0.9rem;
+    width: 85%;
+    background-color: seashell;
+    padding: 13px;
+    color: rebeccapurple;
+    border: 1px solid rgb(148, 120, 175);
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+textarea:focus {
+    border: 1px solid rgb(131, 96, 145);
+    background-color: rgba(250, 236, 226, 0.952);
+    border-radius: 8px;
+}
+
+button {
+    background-color: seashell;
+    padding: 0.5rem 0.5rem;
+    border-radius: 6px;
+    border: 1px solid rgb(140, 113, 167);
+    color: rebeccapurple;
+    font-weight: 500;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+button:hover {
+    background-color:   rgb(121, 73, 165);
+    color: seashell;
+}
+
+button:focus {
+    background-color: rebeccapurple;
+    color: seashell;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blurb {
+    margin: 0 1rem 1rem 1rem;
+}
+
+#display-container {
+    margin: 0;
+}
+
+#Journal {
+    margin: 0;
+}
+
+hr {
+    display: block;
+    position: relative;
+    border: 0px;
+    height: 0;
+    margin: 0.4rem;
+}
+
+hr.footer {
+    display: block;
+    position: relative;
+    border: 1px;
+    height: 1px;
+    color: rebeccapurple;
+}
+
+#blanket {
+    overflow-wrap: break-word;
+    display: block;
+    flex-wrap: wrap;
+    padding: 0.3rem 1.2rem 0.3rem 1.2rem;
+    margin: 1rem 1rem 0 1rem;
+    background-color: rgba(195, 157, 214, 0.692);
+    border-radius: 10px;
+}
+
+#blanketchild {
+    margin: 0 0 1rem 0;
+}
