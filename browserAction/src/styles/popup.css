@@ -15,8 +15,8 @@ html {
 #app {
     width: 370px;
     height: auto;
-    background-color: rgba(207, 181, 236, 0.767);
-    color: rgb(100, 61, 139);
+    background-color: rgba(218, 181, 236, 0.767);
+    color: rebeccapurple;
     font-weight: 400;
     font-size: 1rem;
     text-align: center;
@@ -28,9 +28,8 @@ html {
 
 h1 {
     padding: 0.7rem 0 0.5rem 0;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 2.2rem;
-    text-shadow: 2px 2px 1px rgba(87, 33, 114, 0.767);
     margin: 0 0 0 0;
     padding-top: 1rem;
     font-family: 'Montserrat', sans-serif;
@@ -48,7 +47,7 @@ a {
 
 .speech-bubble {
 	position: relative;
-	background: #664283;
+	background: #72409b;
     border-radius: 10px;
     width: 85%;
     margin-top: 1.5rem;
@@ -89,7 +88,7 @@ textarea {
     background-color: seashell;
     padding: 13px;
     color: rebeccapurple;
-    border: 1px solid rgba(148, 120, 175, 0.719);
+    border: 1px solid rgb(148, 120, 175);
     border-radius: 10px;
     outline: none;
     font-family: 'Montserrat', sans-serif;
@@ -114,12 +113,12 @@ button {
 }
 
 button:hover {
-    background-color:   rgba(148, 115, 179, 0.925);
+    background-color:   rgb(121, 73, 165);
     color: seashell;
 }
 
 button:focus {
-    background-color: rgb(100, 61, 139);
+    background-color: rebeccapurple;
     color: seashell;
 }
 
