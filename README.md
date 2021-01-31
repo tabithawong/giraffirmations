@@ -5,7 +5,6 @@ Giraffirmations is a Chrome extension focused on helping you see the good! It wa
 # Features:
 * Journalling prompt and text box for you to jot your feelings down
 * Toggle to see your last journal entry and be reminded of your past fuzzy feelings
-* Dark mode
 
 *Easter egg: surprise uplifting videos/playlists*
 
