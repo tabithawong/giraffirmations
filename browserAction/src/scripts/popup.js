@@ -16,6 +16,7 @@ const options = {
     minute: "2-digit"
     }
 
+
 function saveEntry() {
     if (document.getElementById("saveEntry").innerHTML != "Saved") {
         // creating variables for the entry, prompt, and current date
@@ -31,7 +32,7 @@ function saveEntry() {
         chrome.storage.sync.set({"entryList": dayEntries}, function() {
             console.log("added to list");
             console.log(dayEntries);
-        });
+        })
     }
 }
 
@@ -39,10 +40,10 @@ function saveEntry() {
 function printEntries(entries) {
     entries.map(entry => {
         var div = document.createElement('div');
-        div.innerHTML = entry
+        div.innerHTML = entry;
         document.getElementById("blanket").appendChild(div); // adding entry to blanket div
         dayEntries.unshift(entry);
-        console.log(dayEntries)
+        console.log(dayEntries);
     })
 }
 
@@ -57,13 +58,14 @@ function viewPast() {
         var space = document.createElement('br');
         document.getElementById("blanket").appendChild(space); // adding a blank line after entry
         // saving the entryList
-        chrome.storage.sync.get("entryList", function(items) {
+        chrome.storage.sync.get(["entryList"], function(items) {
             console.log(items);
             printEntries(items.entryList);
         })
     }
+
     // if "hide entries"
-    else {
+    else if (buttontext === "Hide Last Entry") {
         var blanketdiv = document.getElementById("blanket");
         blanketdiv.style.display = "none";
         document.getElementById("viewPast").innerHTML = "Thanks for Viewing! 🦒";
