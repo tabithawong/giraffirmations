@@ -1,4 +1,4 @@
-# Giraffirmations
+# 🦒 Giraffirmations 🦒
 
 Giraffirmations is a Chrome extension focused on helping you see the good! It was designed to encourage positive reflection throughout the day with over 50 prompts that aim to reinforce feelings of gratitude. 
 
