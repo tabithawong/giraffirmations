@@ -7,7 +7,7 @@ Giraffirmations is a Chrome extension focused on helping you see the good! It wa
 * Toggle to see your last journal entry and be reminded of your past fuzzy feelings
 * Dark mode
 
-*Easter egg: surprise uplifting videos/playlists*
+*+ easter eggs! (surprise uplifting videos/playlists)*
 
 # How to Install:
 1. Clone this repository or download it by selecting the "Download as a ZIP file" option from the green "Code" button above
