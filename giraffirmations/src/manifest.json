@@ -1,5 +1,5 @@
 {
-  "name": "Grateful Giraffe",
+  "name": "Giraffirmations",
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "A Browser Action Extension",
@@ -33,7 +33,7 @@
       "19": "icons/g16.png",
       "38": "icons/g32.png"
     },
-    "default_title": "Grateful Giraffe",
+    "default_title": "Giraffirmations",
     "default_popup": "popup.html"
   }
 }
