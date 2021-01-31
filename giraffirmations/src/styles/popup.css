@@ -193,4 +193,5 @@ img {
     top: 1rem;
     max-width: 35px;
     max-height: 40px;
+    filter: brightness(2) hue-rotate(-0.25turn) opacity(30%) saturate(80%);
 }
