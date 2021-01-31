@@ -8,6 +8,7 @@ html {
     font-weight: 300;
     width: 386px;
     height: auto;
+    min-height: 560px;
     background-color: seashell;
 }
 
@@ -122,7 +123,6 @@ button:hover {
 }
 
 button:focus {
-    background-color: rebeccapurple;
     background-color: rgb(100, 61, 139);
     color: seashell;
 }
