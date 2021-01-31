@@ -30,11 +30,12 @@ function saveEntry() {
         // resetting the text area value
         document.getElementById("entry").value = "";
         // chrome storage sync
-        chrome.storage.sync.set({"entryList": dayEntries}, function() {
-            console.log("added to list");
+        chrome.storage.sync.get({"entryList": dayEntries}, function() {
             console.log(dayEntries);
         })
-    
+        chrome.storage.sync.set({"entryList": dayEntries}, function() {
+            console.log(dayEntries);
+        })
     }
 }
 
