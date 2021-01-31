@@ -2,8 +2,6 @@
 
 Giraffirmations is a Chrome extension focused on helping you see the good! It was designed to encourage positive reflection throughout the day with over 50 prompts that aim to reinforce feelings of gratitude. 
 
-![SocialHeader](https://github.com/tabithawong/giraffirmations/SocialHeader.png)
-
 # Features:
 * Journalling prompt and text box for you to jot your feelings down
 * Toggle to see your last journal entry and be reminded of your past fuzzy feelings
