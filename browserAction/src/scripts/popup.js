@@ -42,6 +42,7 @@ function saveEntry() {
 function printEntries(entries) {
     entries.map(entry => {
         var div = document.createElement('div');
+        div.setAttribute("id", "blanketchild");
         div.innerHTML = entry;
         document.getElementById("blanket").appendChild(div); // adding entry to blanket div
         dayEntries.unshift(entry);
