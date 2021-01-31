@@ -14,10 +14,10 @@ const options = {
     hour12: true,
     hour: "2-digit",
     minute: "2-digit"
-    }
+}
 
 
-
+// saves a new entry
 function saveEntry() {
     if (document.getElementById("saveEntry").innerHTML != "Saved") {
         // creating variables for the entry, prompt, and current date
@@ -49,6 +49,7 @@ function printEntries(entries) {
     })
 }
 
+// viewing past entry
 function viewPast() {
     var buttontext = document.getElementById("viewPast").innerHTML;
     // if "view past entries"
